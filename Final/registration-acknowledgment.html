@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Acknowledgment</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Registration Successful</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="employee-login.html">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="acknowledgment">
+            <h2>Registration Successful!</h2>
+            <p>Your Employee ID is: <span id="emp-id"></span></p>
+            <p>You can now log in by clicking the button below:</p>
+            <a href="employee-login.html" class="button">Login</a>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Banking Management System. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        // Retrieve the empId from localStorage and display it
+        const empId = localStorage.getItem('empId');
+        document.getElementById('emp-id').textContent = empId;
+    </script>
+</body>
+</html>

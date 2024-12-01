@@ -1,0 +1,180 @@
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #0056b3;
+    color: #fff;
+    padding: 1rem 0;
+    position: relative;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+header h1 {
+    font-size: 1.8rem;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+nav ul li a:hover {
+    color: #f5d742;
+}
+
+footer {
+    background-color: #0056b3;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+main {
+    margin: 2rem 0;
+}
+
+/* Form Styling */
+.form-container {
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(17, 4, 106, 0.1);
+    padding: 2rem;
+    width: 100%;
+    max-width: 500px;
+    margin: 2rem auto;
+}
+
+.form-container h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #0056b3;
+}
+
+.form-container label {
+    display: block;
+    margin: 0.5rem 0;
+}
+
+.form-container input, .form-container textarea, .form-container button {
+    width: 100%;
+    padding: 0.8rem;
+    margin: 0.5rem 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.form-container button {
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.form-container button:hover {
+    background-color: #2285ef;
+}
+
+.error-message {
+    color: red;
+    font-size: 0.8rem;
+}
+
+.back-btn {
+    font-size: 1.5rem;
+    color: #0056b3;
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+.back-btn:hover {
+    color: #2285ef;
+}
+
+/* Hero Section */
+#home {
+    color: #0056b3;
+    text-align: center;
+    padding: 5rem 0;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin: 1rem 0;
+}
+
+.bank-image {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    margin-top: 2rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        margin-top: 1rem;
+    }
+
+    .form-container {
+        padding: 1.5rem;
+    }
+
+    .bank-image {
+        width: 80%;
+        max-width: 600px;
+    }
+}
+/* Button styling */
+.button {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    margin-top: 1.5rem;
+}
+
+.button:hover {
+    background-color: #45a049;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Banking Management System</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="employee-registration.html">Employee Registration</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <a href="index.html" class="back-btn">&#8592;</a>
+    <main>
+        <section class="form-container">
+            <form id="login-form">
+                <h2>Employee Login</h2>
+                <label for="emp-id">Employee ID</label>
+                <input type="text" id="emp-id" placeholder="Enter Employee ID" required />
+                
+                <label for="login-password">Password</label>
+                <input type="password" id="login-password" placeholder="Enter Password" required />
+                
+                <button type="submit">Login</button>
+                <p>Don't have an account? <a href="employee-registration.html">Register</a></p>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Banking Management System. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

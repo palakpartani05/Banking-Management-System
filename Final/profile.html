@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="profile.css">
+</head>
+<body>
+    
+    <div class="profile-container">
+    <a href="dashboard.html" class="back-btn">&#8592;</a>
+        <header>
+            <h1>Employee Profile</h1>
+        </header>
+        <div id="profile-details" class="profile-details">
+            <!-- Profile Image Section -->
+            <div class="profile-image">
+                <img id="profile-img" src="default-profile.png" alt="Profile Image" />
+                <input type="file" id="upload-image" class="upload-image" />
+            </div>
+        </div>
+        <div id="profile-info" class="profile-info"></div>
+        <div class="buttons">
+            <button id="save-profile" class="btn">Save Profile</button>
+            <button id="delete-profile" class="btn delete-btn">Delete Profile</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

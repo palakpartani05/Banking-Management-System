@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Banking Management System</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="employee-login.html">Employee Login</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <a href="index.html" class="back-btn">&#8592;</a>
+    <main>
+        <section class="form-container">
+            <form id="registration-form">
+                <h2>Employee Registration</h2>
+                <label for="first-name">First Name</label>
+                <input type="text" id="first-name" placeholder="Enter First Name" maxlength="50" required />
+                
+                <label for="last-name">Last Name</label>
+                <input type="text" id="last-name" placeholder="Enter Last Name" maxlength="50" required />
+                
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Enter Email" required />
+                <span id="email-error" class="error-message"></span>
+                
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Enter Password" maxlength="30" required />
+                <span id="password-error" class="error-message"></span>
+                
+                <label for="confirm-password">Confirm Password</label>
+                <input type="password" id="confirm-password" placeholder="Confirm Password" maxlength="30" required />
+                <span id="confirm-password-error" class="error-message"></span>
+                
+                <label for="address">Address</label>
+                <textarea id="address" placeholder="Enter Address" required></textarea>
+                
+                <label for="contact-number">Contact Number</label>
+                <input type="text" id="contact-number" placeholder="Enter Contact Number" maxlength="10" required />
+                <span id="contact-error" class="error-message"></span>
+                
+                <button type="submit">Register</button>
+                <p>Already have an account? <a href="employee-login.html">Login</a></p>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Banking Management System. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
